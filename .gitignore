@@ -1,0 +1,19 @@
+# PyCharm specific files
+.idea/
+
+# Python bytecode files
+*.pyc
+__pycache__/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Model files
+*.h5
+*.pth
+
+# Outputs
+outputs/
+
+# Excel files
+*.xlsx
