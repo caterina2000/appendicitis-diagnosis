@@ -1,19 +1,24 @@
-# PyCharm specific files
-.idea/
+# Ignora dataset pesanti
+US_pictures/
 
-# Python bytecode files
-*.pyc
+# Ignora file di Python compilati
 __pycache__/
+*.py[cod]
 
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints/
+# Ignora file di ambiente virtuale
+venv/
+.env
 
-# Model files
+# Ignora file di log
+*.log
+
+# Ignora checkpoint di modelli o output pesanti
+checkpoints/
+models/
 *.h5
-*.pth
+*.pt
+*.ckpt
 
-# Outputs
-outputs/
-
-# Excel files
-*.xlsx
+# Ignora file temporanei di sistema
+.DS_Store
+Thumbs.db

@@ -1,0 +1,8 @@
+                 precision    recall  f1-score   support
+
+No Appendicitis     0.9184    0.5921    0.7200       152
+   Appendicitis     0.8949    0.9851    0.9378       536
+
+       accuracy                         0.8983       688
+      macro avg     0.9066    0.7886    0.8289       688
+   weighted avg     0.9001    0.8983    0.8897       688

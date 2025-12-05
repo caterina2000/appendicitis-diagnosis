@@ -1,26 +1,24 @@
-import os
-
-#Percorsi dei file
+# === File Path ===
 DATA_PATH = 'data/raw/app_data.xlsx'
 IMAGE_FOLDER = 'data/raw/US_Pictures'
 OUTPUT_FOLDER = 'data/processed/US_Pictures_new'
 
-#Parametri delle immagini
+# === Images Path ===
 IMAGE_SIZE = (224,224)
 
-#Parametri di addestramento
+# === Training parameters ===
 BATCH_SIZE = 32
-EPOCHS_INITIAL = 20
-EPOCHS_FINE_TUNE = 10
+EPOCHS_INITIAL = 7
+EPOCHS_FINE_TUNE = 5
 LEARNING_RATE_INITIAL = 1e-3
 LEARNING_RATE_FINE_TUNE = 1e-5
-PATIENCE = 5
-CLASS_WEIGHT = {0: 1, 1: 2}
+PATIENCE = 3
+CLASS_WEIGHT = None #lo gestisco dinamicamente
 
-#Parametri di test
-TEST_SIZE = 0.2
+# === Test parameters ===
+TEST_SIZE = 0.4
 RANDOM_STATE = 42
 
-#Percorso per salvare il modello
+# === Path to save model ===
 MODEL_PATH = 'outputs/models/best_model.h5'
 LOG_DIR = 'outputs/logs'
